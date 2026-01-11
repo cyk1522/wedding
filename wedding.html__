@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>婚礼网站</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="wedding.css">
+</head>
+<body>
+    <!-- Sticky Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="initial">JD</span>
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="菜单">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3 6H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <nav class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-content">
+                <button class="close-btn" id="closeBtn" aria-label="关闭菜单">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <ul class="menu-list">
+                    <li><a href="#home" class="menu-link">首页</a></li>
+                    <li><a href="#about" class="menu-link">关于我们</a></li>
+                    <li><a href="#time-place" class="menu-link">时间地点</a></li>
+                    <li><a href="#rsvp" class="menu-link">回复邀请</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero" id="home">
+        <div class="hero-image">
+            <!-- Placeholder for couple's photo -->
+            <div class="placeholder-image"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Jia & David</h1>
+            <p class="hero-sub">我们诚挚邀请您见证爱情</p>
+            <p class="hero-date">2025.06.18</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">关于我们</h2>
+            <div class="about-content">
+                <div class="about-item">
+                    <div class="about-image">
+                        <img src="photo1.jpg" alt="袁子鹏" class="about-photo">
+                    </div>
+                    <div class="about-text">
+                        <h3 class="about-subtitle">袁子鹏</h3>
+                        <p class="about-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="about-item">
+                    <div class="about-image">
+                        <img src="photo2.jpg" alt="朱明垚" class="about-photo">
+                    </div>
+                    <div class="about-text">
+                        <h3 class="about-subtitle">朱明垚</h3>
+                        <p class="about-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Time & Place Section -->
+    <section class="time-place" id="time-place">
+        <div class="container">
+            <h2 class="section-title">时间地点</h2>
+            <div class="time-place-content">
+                <div class="time-section">
+                    <div class="date">06.18.2025</div>
+                    <div class="time-details">
+                        <p class="time-label">仪式开始</p>
+                        <p class="time-value">15:30</p>
+                    </div>
+                    <div class="time-details">
+                        <p class="time-label">晚宴开始</p>
+                        <p class="time-value">18:00</p>
+                    </div>
+                </div>
+                <div class="place-section">
+                    <h3 class="place-title">婚礼场地</h3>
+                    <p class="place-address">北京市朝阳区建国路88号<br>JW万豪酒店大宴会厅</p>
+                    <div class="map-container">
+                        <!-- Minimalist SVG Map -->
+                        <svg class="map-svg" width="100%" height="200" viewBox="0 0 800 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 100 L150 50 L300 80 L450 40 L600 70 L750 100" stroke="#0C0C0C" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="450" cy="40" r="8" fill="#2361FF"/>
+                            <text x="450" y="65" font-family="'Libre Franklin', sans-serif" font-size="14" text-anchor="middle" fill="#0C0C0C">JW万豪酒店</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section class="rsvp" id="rsvp">
+        <div class="container">
+            <div class="rsvp-content">
+                <h2 class="section-title">回复邀请</h2>
+                <p class="rsvp-subtitle">我们非常期待您的到来</p>
+                <button class="rsvp-btn">RSVP</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Instagram</a>
+                    <span class="footer-separator">|</span>
+                    <a href="#" class="footer-link">Weibo</a>
+                    <span class="footer-separator">|</span>
+                    <a href="#" class="footer-link">Email</a>
+                </div>
+                <p class="copyright">© 2025 Jia & David. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="wedding.js"></script>
+</body>
+</html>
